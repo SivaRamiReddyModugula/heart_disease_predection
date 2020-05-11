@@ -42,10 +42,10 @@
             <td>Chest Pain</td>
             <td>
               <select name="cp" id="" required="required">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="0">No Pain</option>
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">heavy</option>
               </select>
             </td>
           </tr>
@@ -84,23 +84,23 @@
                 id=""
                 value="0"
                 required="required"
-              />0
+              />False
               <input
                 type="radio"
                 name="fbs"
                 value="1"
                 id=""
                 required="required"
-              />1
+              />True
             </td>
           </tr>
           <tr>
             <td>Resting electrocardiographic results</td>
             <td>
               <select required="required" name="restecg" id="">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
+                <option value="0">No</option>
+                <option value="1">low</option>
+                <option value="2">high</option>
               </select>
             </td>
           </tr>
@@ -125,14 +125,14 @@
                 required="required"
                 name="exang"
                 id=""
-              />0
+              />No
               <input
                 type="radio"
                 name="exang"
                 value="1"
                 id=""
                 required="required"
-              />1
+              />Yes
             </td>
           </tr>
 
@@ -152,9 +152,9 @@
             <td>Slope</td>
             <td>
               <select required="required" name="slope" id="">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="1">2</option>
+                <option value="0">No</option>
+                <option value="1">Low</option>
+                <option value="1">High</option>
               </select>
             </td>
           </tr>
@@ -167,24 +167,38 @@
                 name="ca"
                 value="0"
                 id=""
-              />0
+              />1'st Vessel
               <input
                 type="radio"
                 required="required"
                 name="ca"
                 value="1"
                 id=""
-              />1
+              />2'nd Vessel
+              <input
+                type="radio"
+                name="ca"
+                required="required"
+                value="2"
+                id=""
+              />3'rd vessel
+              <input
+                type="radio"
+                name="ca"
+                required="required"
+                value="3"
+                id=""
+              />4'th vessel
             </td>
           </tr>
           <tr>
             <td>thal</td>
             <td>
               <select required="required" name="thal" id="">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="0">No</option>
+                <option value="1">normal</option>
+                <option value="2">fixed defect</option>
+                <option value="3">reversable defect</option>
               </select>
             </td>
           </tr>
