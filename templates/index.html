@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heart Disease Predection</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1 style="align-items: center;">Heart Disease Predection</h1>
+      <form action="{{ url_for('predict')}}" method="POST">
+        <table>
+          <tr>
+            <td>Age</td>
+            <td>
+              <input
+                type="text"
+                name="age"
+                placeholder="Enter your Age"
+                required="required"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Sex</td>
+            <td>
+              <input
+                type="radio"
+                name="gender"
+                id=""
+                required="required"
+                value="1"
+              />Male
+              <input
+                type="radio"
+                name="gender"
+                id=""
+                required="required"
+                value="0"
+              />Female
+            </td>
+          </tr>
+          <tr>
+            <td>Chest Pain</td>
+            <td>
+              <select name="cp" id="" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Resting Blood Presire</td>
+            <td><input type="text" name="bp" id="" require="required" /></td>
+          </tr>
+
+          <tr>
+            <td>Serum cholestral in (mg/dl)</td>
+            <td><input type="text" name="sc" id="" require="required" /></td>
+          </tr>
+
+          <tr>
+            <td>Fasting Blood sugar (>120 mg/dl)</td>
+            <td>
+              <input
+                type="radio"
+                name="fbs"
+                id=""
+                value="0"
+                required="required"
+              />0
+              <input
+                type="radio"
+                name="fbs"
+                value="1"
+                id=""
+                required="required"
+              />1
+            </td>
+          </tr>
+          <tr>
+            <td>Resting electrocardiographic results</td>
+            <td>
+              <select required="required" name="restecg" id="">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>maximum heart rate</td>
+            <td><input type="text" name="mhr" id="" require="required" /></td>
+          </tr>
+          <tr>
+            <td>exercise induced angina</td>
+            <td>
+              <input
+                type="radio"
+                value="0"
+                required="required"
+                name="exang"
+                id=""
+              />0
+              <input
+                type="radio"
+                name="exang"
+                value="1"
+                id=""
+                required="required"
+              />1
+            </td>
+          </tr>
+
+          <tr>
+            <td>oldpeak</td>
+            <td><input type="text" name="op" id="" require="required" /></td>
+          </tr>
+          <tr>
+            <td>Slope</td>
+            <td>
+              <select required="required" name="slope" id="">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>No of Major vessels</td>
+            <td>
+              <input
+                type="radio"
+                required="required"
+                name="ca"
+                value="0"
+                id=""
+              />0
+              <input
+                type="radio"
+                required="required"
+                name="ca"
+                value="1"
+                id=""
+              />1
+            </td>
+          </tr>
+          <tr>
+            <td>thal</td>
+            <td>
+              <select required="required" name="thal" id="">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" align="center">
+              <button type="submit">Predict</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label style="color: red; text-align: center;">
+                {{prediction_text}}
+              </label>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
