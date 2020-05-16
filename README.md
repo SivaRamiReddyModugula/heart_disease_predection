@@ -7,7 +7,7 @@
 ## Code and Resources Used
 **Python Version:** 3.7  
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, flask, json, pickle  
-**For Web Framework Requirments:** pip install -r requirements.txt  
+**For Web Framework Requirments:** `pip install -r requirements.txt`
 ## Data Collection
 For this project we collected the data from the [Kaggel](https://www.kaggle.com/ronitf/heart-disease-uci).  
 - age
