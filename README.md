@@ -30,4 +30,4 @@ After the data is collected from the Kaggle, I need to clean it up so that it wa
 - Identify if there are any im-balance data. it is better to do **IQR** strategy.
 - Drop the unusable columns.
 ## EDA
-
+![alt data image not found](https://github.com/SivaRamiReddyModugula/heart_disease_predection/blob/data_gathering/Heart%20disease%20images/data.PNG)
