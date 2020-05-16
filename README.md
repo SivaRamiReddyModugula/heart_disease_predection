@@ -28,3 +28,6 @@ For this project we collected the data from the [Kaggel](https://www.kaggle.com/
 After the data is collected from the Kaggle, I need to clean it up so that it was usable for our model. I made the the following changes:
 - Find any missing values in the data. if there are any handel the missing values.
 - Identify if there are any im-balance data. it is better to do **IQR** strategy.
+- Drop the unusable columns.
+## EDA
+
