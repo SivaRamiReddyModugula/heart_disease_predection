@@ -48,7 +48,11 @@ Out of all the models **Decision Tree Classfier** give the better accuracy when 
 - KNeighborsClassifier---> accuracy: 71, (min,max)->accuracy: (14,100)
 - LinearDiscriminantAnalysis---> accuracy: 84, (min,max)->accuracy: (42,100)
 - GaussianNB---> accuracy: 84, (min,max)->accuracy: (57,100)
-- SVC---> accuracy: 97, (min,max)->accuracy: (71,100)
+- SVC---> accuracy: 97, (min,max)->accuracy: (71,100)  
+Decision Tree Classifier gives the better accuracy of 99%.  
+By using that algorithem I Build that model.
+## Deployment
+The model is dumped by using the pickle file.  
 ## Productionization
-In this stepm I build a flask API endpoint that hosted on a local webserver by following along with the TDS tutorial. The API endpoint takes in a request with a list of values from patients report and returns an estimated result as you are suffering from the heart disease (or) not.  
+In this step I build a flask API endpoint that hosted on a local webserver by following along with the TDS tutorial. The API endpoint takes in a request with a list of values from patients report and returns an estimated result as you are suffering from the heart disease (or) not.  
 Later, I uploades this project [Heroku](https://heart-disease-pediction-api.herokuapp.com/)
