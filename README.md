@@ -55,4 +55,4 @@ By using that algorithem I Build that model.
 The model is dumped by using the pickle file.  
 ## Productionization
 In this step I build a flask API endpoint that hosted on a local webserver by following along with the TDS tutorial. The API endpoint takes in a request with a list of values from patients report and returns an estimated result as you are suffering from the heart disease (or) not.  
-Later, I uploades this project [Heroku](https://heart-disease-pediction-api.herokuapp.com/)
+Later, I uploaded this project [Heroku](https://heart-disease-pediction-api.herokuapp.com/)
